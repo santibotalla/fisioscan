@@ -118,7 +118,7 @@
   die("Connection failed: " . $conn->connect_error);
 }
 
-$query = "INSERT INTO pacientes VALUES (0, '$nombre', '$apellido', 12, '$email', '121414123')";
+$query = "INSERT INTO pacientes VALUES (0, '$nombre', '$apellido', 12, '$email', '$mensaje')";
 
 if ($conexion->query($query) === TRUE) {
   echo "<br> Se ha almacenado su información en la base de pacientes";
